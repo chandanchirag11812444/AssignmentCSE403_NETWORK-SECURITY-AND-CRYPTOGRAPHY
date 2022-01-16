@@ -1,0 +1,22 @@
+
+
+
+from math import gcd
+
+
+a=input("enter the first number:  ")#take any integer input i am taking first no this time 2740
+a=int(a)
+b=input("enter the second number:  ")#here 1760
+b=int(b)
+r1=a
+r2=b
+r=0
+while (r2>0) :
+    q=r1//r2#to get whole number as return if i take here only '/' then  return float
+    r=r1-q*r2
+    r1=r2
+    r2=r
+    gcd=r1
+print("the gcd of ",a,"and ",b,"is",gcd)
+
+
